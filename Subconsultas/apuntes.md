@@ -1,5 +1,21 @@
 # CONSULTAS
 
+Los siguientes ejemplos estan hechos a base de la siguiente Base de Datos:
+
+```cpp
+1. usuarios (id, nombre, usuario, contraseña, rol_id, activo)
+2. roles (id, nombre_rol, descripcion)
+3. permisos (id, nombre_permiso)
+4. rol_permiso (id, rol_id, permiso_id)
+5. logs_acceso (id, usuario_id, fecha_acceso, ip, exito)
+6. modulos (id, nombre_modulo, descripcion)
+7. rol_modulo (id, rol_id, modulo_id)
+8. auditorias (id, usuario_id, accion, tabla_afectada, fecha)
+9. configuraciones (id, clave, valor)
+10. alertas_seguridad (id, mensaje, tipo, fecha_creacion)
+```
+
+
 ## CONSULTA ESCALAR
 
 Es un tipo de consulta que devuelve un unico valor
@@ -74,3 +90,5 @@ WHERE rol_id in (
     WHERE p.nombre_permiso = "Ver Auditoria"
 );
 ```
+
+
