@@ -60,5 +60,3 @@ Y se llama de la siguiente forma:
 ```sql
 CALL insertar_usuario('usuario','Tomate25+','vendedor');
 ```
-
-<span style="color:GREEN">Esto es Color verde</span>
