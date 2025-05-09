@@ -15,7 +15,6 @@ Los siguientes ejemplos estan hechos a base de la siguiente Base de Datos:
 10. alertas_seguridad (id, mensaje, tipo, fecha_creacion)
 ```
 
-
 ## CONSULTA ESCALAR
 
 Es un tipo de consulta que devuelve un unico valor
@@ -90,5 +89,3 @@ WHERE rol_id in (
     WHERE p.nombre_permiso = "Ver Auditoria"
 );
 ```
-
-

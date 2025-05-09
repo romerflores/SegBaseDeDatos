@@ -134,6 +134,7 @@ SELECT CONNECTION_ID(), VERSION(), DATABASE();
 ```
 
 ### Registro de cambios
+
 Para este registro de datos se van a usar TRIGGERS
 
 ```SQL
