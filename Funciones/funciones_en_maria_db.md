@@ -150,3 +150,23 @@ END //
 DELIMTIER ;
 
 ```
+
+## Funciones de mascara de datos
+
+Estas funciones nos ayudad a enmascarar datos que podrian ser sensibles, de modo que solo usuarios con permisos parciales, puedan acceder parcialmente al dato en cuestion.
+
+Ej: $romer141016@gmail.com$ -> $r------16@g----.com$
+
+```sql
+--enmascarar un email
+SELECT customer_id,
+CONCAT(LEFT(email,3),'***',SUBSTRING_INDEX(email,'@',-1))
+as email_masked
+FROM customer
+
+--enmascarar una targeta
+SELECT customer_id,
+CONCAT(LEFT(card_number,3),'***-*****')
+as masked_card
+FROM customer
+```
